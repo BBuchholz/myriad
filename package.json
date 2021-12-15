@@ -1,0 +1,14 @@
+{
+  "name": "@entomdt/myriad",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
