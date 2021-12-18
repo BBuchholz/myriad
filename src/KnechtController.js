@@ -17,6 +17,15 @@ const KnechtController = () => {
 
       //make the magick happen here :)
 
+      for(let i = 0; i < setOne.length; i++){
+
+        for(let j = 0; j < setTwo.length; j++){
+
+          allPossible.push([setOne[i], setTwo[j]]);
+        }
+      }
+
+
       return allPossible;
     },
 

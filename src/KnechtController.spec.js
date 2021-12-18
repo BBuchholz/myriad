@@ -39,17 +39,17 @@ describe('all possible combos function', () => {
 		const expectedResultThreeC = ['4C', '7W'];
 
 		var allPossible = magisterLudi.allPossibleCombos(setOne, setTwo);
-		expect(allPossible[0]).toBe(expectedResultOneA);
-		expect(allPossible[1]).toBe(expectedResultOneB);
-		expect(allPossible[2]).toBe(expectedResultOneC);
+		expect(allPossible[0]).toStrictEqual(expectedResultOneA);
+		expect(allPossible[1]).toStrictEqual(expectedResultOneB);
+		expect(allPossible[2]).toStrictEqual(expectedResultOneC);
 
-		expect(allPossible[3]).toBe(expectedResultTwoA);
-		expect(allPossible[4]).toBe(expectedResultTwoB);
-		expect(allPossible[5]).toBe(expectedResultTwoC);
+		expect(allPossible[3]).toStrictEqual(expectedResultTwoA);
+		expect(allPossible[4]).toStrictEqual(expectedResultTwoB);
+		expect(allPossible[5]).toStrictEqual(expectedResultTwoC);
 
-		expect(allPossible[6]).toBe(expectedResultThreeA);
-		expect(allPossible[7]).toBe(expectedResultThreeB);
-		expect(allPossible[8]).toBe(expectedResultThreeC);
+		expect(allPossible[6]).toStrictEqual(expectedResultThreeA);
+		expect(allPossible[7]).toStrictEqual(expectedResultThreeB);
+		expect(allPossible[8]).toStrictEqual(expectedResultThreeC);
 
 	});
 });
