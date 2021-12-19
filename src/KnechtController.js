@@ -10,6 +10,44 @@ const KnechtController = () => {
         return self.getDynamicScenarios();
       }
     },
+    
+    dealTwelveTrees: () => {
+      let seed = [
+        '4D', '5W', '3C', '2S',
+        '6D', '5S', '3D', '2W',
+        '9D', '6W', '8C', '4S',
+        '5C', '8D', '3S', '2D',
+        '7D', '5D', '3W', '10S',
+        '7W', '8W', '6S', '9S',
+        '7C', '10D', '9W', '2C',
+        '10W', '10C', '9C', '4C',
+        '8S', '7S', '4W', '6C',
+      ];
+
+      self.shuffle(seed);
+      return seed;
+    },
+
+    shuffle: (array) => {
+      // An implementation of the Fisher-Yates (aka Knuth) Shuffle
+      // from: https://stackoverflow.com/a/2450976/670768
+
+      let currentIndex = array.length, randomIndex;
+
+      //while there remains elements to shuffle...
+      while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // and swap it with the current element.
+        [array[currentIndex], array[randomIndex]] =
+          [array[randomIndex], array[currentIndex]];
+      }
+
+      return array;
+    },
 
     allPossibleCombos: (setOne, setTwo) => {
 
