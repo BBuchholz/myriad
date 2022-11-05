@@ -1,4 +1,5 @@
-const KnechtController = require('./KnechtController');
+// const KnechtController = require('./KnechtController');
+import KnechtController from './KnechtController.js';
 const magisterLudi = KnechtController();
 
 describe('deal function', () => {
